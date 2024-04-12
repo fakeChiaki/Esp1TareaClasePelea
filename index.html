@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combat</title>
+  <style>
+    .character-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .character-name {
+      margin-right: 10px;
+    }
+
+    .health-bar-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .health-bar {
+      width: 200px;
+      height: 20px;
+      border: 1px solid black;
+      background-color: #ddd;
+      margin-right: 10px;
+    }
+
+    .health {
+      height: 100%;
+      background-color: green;
+    }
+  </style>
+</head>
+<body>
+  <h2>Fight!</h2>
+
+  <div class="character-container" id="hero">
+    <img src="creature.png" alt="Hero Stickman">
+    <div class="health-bar-container">
+      <span class="character-name">Heroe</span>
+      <div class="health-bar" id="hero-health-bar">
+        <div class="health" style="width: 100%;"></div>
+      </div>
+      <span id="hero-health">HP 100/100</span>
+    </div>
+  </div>
+
+  <div class="character-container" id="enemy">
+    <img src="limo.png" alt="Enemy Stickman">
+    <div class="health-bar-container">
+      <span class="character-name">Limo</span>
+      <div class="health-bar" id="enemy-health-bar">
+        <div class="health" style="width: 100%;"></div>
+      </div>
+      <span id="enemy-health">HP 500/500</span>
+    </div>
+  </div>
+
+  <ul id="battle-log"></ul>
+
+  <script src="./js/solucion_ejercicio_2.js"></script>
+</body>
+</body>
+</html>
